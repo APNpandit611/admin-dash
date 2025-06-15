@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001;
 
 //cors config
 const corsOption = {
-    origin: ["http://localhost:5173", "https://admin-dashboard-ev.netlify.app"],
+    origin: ["http://localhost:5173"],
     credentials: true,
 };
 
