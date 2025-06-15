@@ -8,7 +8,7 @@ route.post('/create', upload.array('images', 5), isAuth, create)
 route.get('/all', getAll)
 route.get('/:id', getById)
 route.put('/edit/:id', upload.array('images', 5), isAuth, updateProduct)
-route.delete('/delete/:id', isAuth, deleteProduct)
+route.delete('/delete/:id', deleteProduct)
 route.post('/bulk', isAuth, bulk)
 
 export default route
