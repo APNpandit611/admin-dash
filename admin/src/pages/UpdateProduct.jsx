@@ -45,7 +45,7 @@ const UpdateProduct = ({ productId }) => {
         const getProduct = async () => {
             try {
                 const res = await axios.get(
-                    `${import.meta.env.BACKEND_URL}/product/${productId}`,
+                    `${import.meta.env.VITE_BACKEND_URL}/product/${productId}`,
                     {
                         headers: {
                             "Content-Type": "application/json",
