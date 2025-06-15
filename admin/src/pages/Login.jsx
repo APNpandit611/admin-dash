@@ -60,11 +60,12 @@ const Login = () => {
         >
             <div className="flex flex-col gap-5 bg-white p-8 rounded-md shadow-md w-full max-w-sm">
                 <div className="flex justify-center">
-                    <img
+                    {/* <img
                         className="h-12 w-auto rounded-lg"
                         src="/Image.png"
                         alt="Logo"
-                    />
+                    /> */}
+                    
                 </div>
                 <h1 className="text-xl font-semibold text-center text-[#3E2723]">
                     Admin Login

@@ -61,11 +61,12 @@ const SliderNav = () => {
         <div className={`${ rmode ? "bg-gray-900 text-white": "bg-white"} flex flex-col justify-between w-16 lg:w-52 lg:px-2 shadow-lg rounded-md`}>
             <div className="flex flex-col">
                 <Link to="/dashboard">
-                    <img
+                    {/* <img
                         src="/Image.png"
                         alt=""
                         className="h-8 w-12 rounded-md my-3 mx-1 lg:w-20 lg:h-12"
-                    />
+                    /> */}
+                    LOGO
                 </Link>
                 <hr className="mb-2" />
 
