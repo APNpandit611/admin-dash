@@ -31,7 +31,12 @@ const Login = () => {
             const res = await axios.post(
                 `${import.meta.env.VITE_BACKEND_URL}/admin/login`,
                 input,
-                
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    withCredentials: true,
+                }
             );
             if (res.data.success) {
                 dispatch(login({
