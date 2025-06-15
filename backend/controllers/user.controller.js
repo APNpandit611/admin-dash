@@ -76,7 +76,7 @@ export const adminLogin = async (req, res) => {
             userId: admin._id,
             role: admin.role,
         };
-
+        console.log(tokenData)
         // create the token using jsonwebtoken
         const token = jwt.sign(tokenData, process.env.ADMIN_SECRET_KEY, {
             expiresIn: "1d",
