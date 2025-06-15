@@ -13,9 +13,22 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 //cors config
-const corsOption = {
-    origin: ["https://admin-dashboard-ev.netlify.app", "http://localhost:5173"],
-    credentials: true,
+// const corsOption = {
+//     origin: ["https://admin-dashboard-ev.netlify.app", "http://localhost:5173"],
+//     credentials: true,
+// };
+const allowedOrigins = ['https://admin-dashboard-ev.netlify.app'];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 };
 app.use(cors(corsOption));
 

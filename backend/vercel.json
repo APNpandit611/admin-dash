@@ -9,9 +9,7 @@
   "routes": [
     { 
       "src": "/(.*)", 
-      "dest": "index.js", 
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], 
-      "headers": { "Access-Control-Allow-Origin": "https://admin-dashboard-ev.netlify.app" } 
+      "dest": "index.js"
     }
   ]
 }
