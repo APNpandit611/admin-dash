@@ -88,7 +88,7 @@ export const adminLogin = async (req, res) => {
             .cookie("token", token, {
                 httpOnly: true,
                 maxAge: 1 * 24 * 60 * 60 * 1000,
-                sameSite: "strict",
+                sameSite: "None",
                 secure: true,
             })
             .json({
@@ -108,7 +108,7 @@ export const logout = async (req, res) => {
         res.clearCookie("token", {
             httpOnly: true,
             secure: true,
-            sameSite: "strict",
+            sameSite: "None",
             maxAge: 0,
         });
 
@@ -126,26 +126,26 @@ export const logout = async (req, res) => {
     }
 };
 
-export const verifyToken = (req, res) => {
-    try {
-        const token = req.cookies.token;
-        if (!token) {
-            return res.status(401).json({ message: "Unauthorized", success:false });
-        }
-        // const decodedToken = jwt.verify(token, process.env.ADMIN_SECRET_KEY);
-        // // if not decoded, return error message
-        // if (!decodedToken) {
-        //     return res.status(403).json({
-        //         message: "Invalid Token",
-        //         success: false,
-        //     });
-        // }
-        // res.status(200).json({ message: "Token verified", success: true });
-    } catch (error) {
-        return res.status(500).json({
-            message: "Unauthorized Access",
-            success: false,
-        });
+// export const verifyToken = (req, res) => {
+//     try {
+//         const token = req.cookies.token;
+//         if (!token) {
+//             return res.status(401).json({ message: "Unauthorized", success:false });
+//         }
+//         // const decodedToken = jwt.verify(token, process.env.ADMIN_SECRET_KEY);
+//         // // if not decoded, return error message
+//         // if (!decodedToken) {
+//         //     return res.status(403).json({
+//         //         message: "Invalid Token",
+//         //         success: false,
+//         //     });
+//         // }
+//         // res.status(200).json({ message: "Token verified", success: true });
+//     } catch (error) {
+//         return res.status(500).json({
+//             message: "Unauthorized Access",
+//             success: false,
+//         });
         
-    }
-};
+//     }
+// };
