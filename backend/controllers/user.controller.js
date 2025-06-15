@@ -88,7 +88,8 @@ export const adminLogin = async (req, res) => {
                 httpOnly: true,
                 maxAge: 1 * 24 * 60 * 60 * 1000,
                 secure: true,
-                sameSite:"None"
+                sameSite:"None",
+                domain:".example.com"
             })
             .json({
                 message: "Welcome Admin",
