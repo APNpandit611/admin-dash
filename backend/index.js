@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001;
 
 //cors config
 const corsOption = {
-    origin: ["http://localhost:5173", process.env.FRONTEND_URL],
+    origin: ["http://localhost:5173", "https://admin-dashboard-opal-one.vercel.app"],
     credentials: true,
 };
 
