@@ -73,13 +73,13 @@ export const adminLogin = async (req, res) => {
 
         // create token data and store userid and role
         const tokenData = {
-            adminId: admin._id,
+            userId: admin._id,
             role: admin.role,
         };
 
         // create the token using jsonwebtoken
         const token = jwt.sign(tokenData, process.env.ADMIN_SECRET_KEY, {
-            expiresIn: "5h",
+            expiresIn: "1d",
         });
 
         // return the token and success message
