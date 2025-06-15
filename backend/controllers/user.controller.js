@@ -55,7 +55,7 @@ export const adminLogin = async (req, res) => {
         let admin = await User.findOne({ email });
 
         // if user not found and role is not admin
-        if (!admin || admin.role !== "admin") {
+        if (!admin) {
             return res.status(404).json({
                 message: "Invalid Email or Password",
                 success: false,
@@ -79,7 +79,6 @@ export const adminLogin = async (req, res) => {
         admin = {
             _id: admin._id,
             email: admin.email,
-            role: admin.role,
         }
         // create the token using jsonwebtoken
         const token = jwt.sign(tokenData, process.env.ADMIN_SECRET_KEY, {
