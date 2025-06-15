@@ -52,7 +52,7 @@ export const adminLogin = async (req, res) => {
         }
 
         // check if the user exists
-        const admin = await User.findOne({ email });
+        let admin = await User.findOne({ email });
 
         // if user not found and role is not admin
         if (!admin || admin.role !== "admin") {
@@ -74,8 +74,13 @@ export const adminLogin = async (req, res) => {
         // create token data and store userid and role
         const tokenData = {
             userId: admin._id,
-            role: admin.role,
         };
+
+        admin = {
+            _id: admin._id,
+            email: admin.email,
+            role: admin.role,
+        }
         // create the token using jsonwebtoken
         const token = jwt.sign(tokenData, process.env.ADMIN_SECRET_KEY, {
             expiresIn: "1d",
@@ -89,7 +94,6 @@ export const adminLogin = async (req, res) => {
                 maxAge: 1 * 24 * 60 * 60 * 1000,
                 secure: true,
                 sameSite:"None",
-                domain:".example.com"
             })
             .json({
                 message: "Welcome Admin",
