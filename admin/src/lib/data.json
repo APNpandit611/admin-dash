@@ -1,0 +1,192 @@
+[
+    {
+        "title": "PowerMax EV Charger",
+        "model": "PM-500",
+        "price": 2200000,
+        "stock": 40,
+        "description": "A powerful EV charger with fast charging capabilities.",
+        "brand": "PowerMax",
+        "compatibleBrands": ["BMW", "Audi", "Volkswagen"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "180 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "ChargePro EV Charger",
+        "model": "CP-1000",
+        "price": 2000000,
+        "stock": 60,
+        "description": "Reliable and efficient EV charger for home use.",
+        "brand": "ChargePro",
+        "compatibleBrands": ["Mercedes", "BMW", "Nissan"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "150 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "VoltCharge EV Charger",
+        "model": "VC-200",
+        "price": 2800000,
+        "stock": 30,
+        "description": "High-performance charger with quick charging time.",
+        "brand": "VoltCharge",
+        "compatibleBrands": ["Ford", "Hyundai", "Chevrolet"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "220 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "CCS"
+            }
+        ]
+    },
+    {
+        "title": "EcoCharge EV Charger",
+        "model": "EC-800",
+        "price": 2400000,
+        "stock": 45,
+        "description": "Eco-friendly charger with efficient energy use.",
+        "brand": "EcoCharge",
+        "compatibleBrands": ["Tesla", "BMW", "Volkswagen"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "160 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "SuperVolt EV Charger",
+        "model": "SV-1200",
+        "price": 3500000,
+        "stock": 25,
+        "description": "Super fast EV charger with ultra-fast charging capabilities.",
+        "brand": "SuperVolt",
+        "compatibleBrands": ["Audi", "BMW", "Mercedes"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "250 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "FastCharge EV Charger",
+        "model": "FC-700",
+        "price": 2100000,
+        "stock": 70,
+        "description": "A compact EV charger with rapid charging.",
+        "brand": "FastCharge",
+        "compatibleBrands": ["Ford", "Nissan", "Honda"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "175 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "VoltMax EV Charger",
+        "model": "VM-600",
+        "price": 2700000,
+        "stock": 35,
+        "description": "High-speed charger for all modern electric vehicles.",
+        "brand": "VoltMax",
+        "compatibleBrands": ["Chevrolet", "Hyundai", "Tesla"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "210 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "CCS"
+            }
+        ]
+    },
+    {
+        "title": "UltraVolt EV Charger",
+        "model": "UV-400",
+        "price": 3000000,
+        "stock": 55,
+        "description": "Efficient and ultra-fast EV charger for commercial use.",
+        "brand": "UltraVolt",
+        "compatibleBrands": ["Ford", "Audi", "BMW"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "230 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "CCS"
+            }
+        ]
+    },
+    {
+        "title": "RapidCharge EV Charger",
+        "model": "RC-900",
+        "price": 2600000,
+        "stock": 50,
+        "description": "A charger that provides rapid charging for all EVs.",
+        "brand": "RapidCharge",
+        "compatibleBrands": ["Tesla", "Chevrolet", "Hyundai"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "190 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    },
+    {
+        "title": "QuickVolt EV Charger",
+        "model": "QV-1000",
+        "price": 2300000,
+        "stock": 40,
+        "description": "Quick and efficient EV charger with fast delivery times.",
+        "brand": "QuickVolt",
+        "compatibleBrands": ["Mercedes", "Audi", "Volkswagen"],
+        "feature": [
+            {
+                "title": "Charging Speed",
+                "detail": "200 kW"
+            },
+            {
+                "title": "Connector Type",
+                "detail": "TYPE 2"
+            }
+        ]
+    }
+]
