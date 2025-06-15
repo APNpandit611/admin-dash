@@ -93,7 +93,6 @@ export const adminLogin = async (req, res) => {
                 maxAge: 1 * 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 sameSite:"None",
-                secure: true,
             })
             .json({
                 message: "Welcome Admin",
@@ -107,16 +106,8 @@ export const adminLogin = async (req, res) => {
 
 export const logout = async (req, res) => {
     try {
-        // Clear the token cookie
-        res.clearCookie("token", {
-            httpOnly: true,
-            secure: true,
-            sameSite: "None",
-            maxAge: 0,
-        });
-
         // Return success message
-        return res.status(200).json({
+        return res.status(200).cookie("token", "", { maxAge: 0}).json({
             message: "Logged out successfully",
             success: true,
         });
