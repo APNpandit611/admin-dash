@@ -15,7 +15,7 @@ const SliderNav = () => {
 
     const logoutHandler = async () => {
         try {
-            const res = await axios.get(`http://localhost:5000/admin/logout`, {
+            const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/admin/logout`, {
                 headers: {
                     "Content-Type": "application/json",
                 },

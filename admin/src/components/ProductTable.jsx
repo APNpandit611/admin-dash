@@ -64,7 +64,7 @@ const ProductTable = () => {
             try {
                 dispatch(setLoading(true));
                 const res = await axios.get(
-                    `http://localhost:5000/product/all`,
+                    `${import.meta.env.VITE_BACKEND_URL}/product/all`,
                     {
                         headers: {
                             "Content-Type": "application/json",

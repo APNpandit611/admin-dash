@@ -72,7 +72,7 @@ const Product = () => {
                 console.log("products: ", products);
                 // Send the array of products to the backend
                 const res = await axios.post(
-                    `http://localhost:5000/product/bulk`,
+                    `${import.meta.env.VITE_BACKEND_URL}/product/bulk`,
                     { products },
                     {
                         headers: {
@@ -158,7 +158,7 @@ const Product = () => {
         try {
             dispatch(setLoading(true));
             const res = await axios.post(
-                `http://localhost:5000/product/create`,
+                `${import.meta.env.VITE_BACKEND_URL}/product/create`,
                 formData,
                 {
                     headers: {

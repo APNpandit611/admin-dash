@@ -17,7 +17,7 @@ const DeleteProduct = ( { product }) => {
     const handleDelete = async () => {
         try {
             dispatch(setLoading(true));
-            await axios.delete(`http://localhost:5000/product/delete/${product._id}`, {
+            await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/product/delete/${product._id}`, {
                 headers: {
                     "Content-Type": "application/json",
                 }, withCredentials: true
